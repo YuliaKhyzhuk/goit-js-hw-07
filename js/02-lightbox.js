@@ -12,7 +12,8 @@ const galleryCardsAll = galleryItems.map((el) => makeGalleryCard(el)).join("");
 galleryListUlEl.insertAdjacentHTML("beforeend", galleryCardsAll);
 
 let gallery = new SimpleLightbox(".gallery a", {
-  /* options */
+  captionsData: "alt",
+  captionDelay: 250,
 });
 gallery.captionPosition = "bottom";
 
